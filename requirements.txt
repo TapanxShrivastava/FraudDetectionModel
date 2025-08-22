@@ -1,0 +1,75 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+imbalanced-learn
+statsmodels
+joblib
+jupyter
+
+1. Data Cleaning
+
+Handled missing values (dropped/imputed).
+
+Removed outliers using IQR method.
+
+Checked and reduced multicollinearity using correlation heatmap.
+
+2. Fraud Detection Model
+
+Algorithms tested: Logistic Regression, Random Forest, XGBoost, LightGBM.
+
+Data imbalance handled using SMOTE.
+
+Models trained on resampled data, evaluated on test split.
+
+3. Variable Selection
+
+Dropped highly correlated variables.
+
+Used XGBoost feature importance.
+
+Kept domain-relevant features (transaction amount, frequency, time, location).
+
+4. Model Performance
+
+Evaluated using Precision, Recall, F1-Score, ROC-AUC.
+
+Confusion Matrix applied to measure fraud detection accuracy.
+
+XGBoost performed best with balanced recall and precision.
+
+5. Key Fraud Predictors
+
+Transaction Amount
+
+Transaction Time (odd hours)
+
+Transaction Frequency
+
+Location Mismatch (foreign/remote)
+
+6. Factor Relevance
+
+Factors are realistic because fraud is linked to unusual user behavior like high-value transactions at odd times or abroad.
+
+7. Infrastructure Prevention Strategies
+
+Real-time anomaly detection.
+
+Multi-factor authentication (MFA).
+
+Adaptive rules engine.
+
+Device fingerprinting and geo-monitoring.
+
+8. Evaluating Effectiveness
+
+Compare fraud detection rate before vs after.
+
+Track fraud losses reduction.
+
+Monitor fraud-to-sales ratio.
+
+A/B test prevention strategies.
